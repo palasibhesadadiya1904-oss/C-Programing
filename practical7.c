@@ -1,15 +1,18 @@
 #include<stdio.h>
 int main()
-{ int age,ticket_fees;
-    ticket_fees=200;
-    printf("welcome at the sunrise amusement park");
-    printf("\nenter ypur age:");
+{ int  entry_fees=200,age;
+    printf("welcome in amusement park!! \n ");
+    printf("enter your age: ");
     scanf("%d",&age);
-    if(age<12)
-    {printf("\nenjoy amusement park without any fees");}
-    else if(age>=12&&age<=60)
-    {printf("\nyou have to pay fees of amusementpark:%d",ticket_fees);}
-    else if(age>60)
-    {printf("\nsorry ! you are not able for entry");}
-return 0;
+    {
+    if(age<=0)
+    {printf("age must be in positive numbers \n ");}
+    else if(age<12)
+   { printf("enjoy without any charges \n ");}
+   else if(age>=12&&age<=60)
+   {printf("you hae to pay fees for enjoyment:%d \n ",entry_fees);}
+   else if(age>60)
+   {printf("sorry you are not eligible for amusmentpark! \n ");}
+    }
+ return 0;
 }
